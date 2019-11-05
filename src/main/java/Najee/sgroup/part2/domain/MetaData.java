@@ -1,11 +1,20 @@
 package Najee.sgroup.part2.domain;
 
-    public class MetaData {
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+public class MetaData {
+    private String id;
+    @JsonProperty("1. Information")
     private String Information;
+    @JsonProperty("2. Symbol")
     private String Symbol;
+    @JsonProperty("3. Last Refreshed")
     private String LastRefreshed;
+    @JsonProperty("4. Interval")
     private String Interval;
+    @JsonProperty("5. Output Size")
     private String OutputSize;
+    @JsonProperty("6. Time Zone")
     private String TimeZone;
 
     public String getInformation() {
@@ -63,4 +72,17 @@ package Najee.sgroup.part2.domain;
     public void setId(String id) {
         this.id = id;
     }
-}
+
+        @Override
+        public String toString() {
+            return "MetaData{" +
+                    "id='" + id + '\'' +
+                    ", Information='" + Information + '\'' +
+                    ", Symbol='" + Symbol + '\'' +
+                    ", LastRefreshed='" + LastRefreshed + '\'' +
+                    ", Interval='" + Interval + '\'' +
+                    ", OutputSize='" + OutputSize + '\'' +
+                    ", TimeZone='" + TimeZone + '\'' +
+                    '}';
+        }
+    }

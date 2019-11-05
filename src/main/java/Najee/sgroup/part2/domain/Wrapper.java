@@ -1,7 +1,12 @@
 package Najee.sgroup.part2.domain;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Wrapper {
+    @JsonProperty("Meta Data")
     private MetaData metaData;
+
+    @JsonProperty("Time Series (5min)")
     private TimeSeries timeSeries;
 
     public MetaData getMetaData() {
