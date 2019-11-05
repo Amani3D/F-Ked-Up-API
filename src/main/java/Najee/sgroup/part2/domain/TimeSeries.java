@@ -1,12 +1,6 @@
 package Najee.sgroup.part2.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity
 public class TimeSeries {
-    @Id
-    private String id;
     private String open;
     private String high;
     private String low;
