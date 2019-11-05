@@ -1,12 +1,6 @@
 package Najee.sgroup.part2.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity
     public class MetaData {
-    @Id
-    private String id;
     private String Information;
     private String Symbol;
     private String LastRefreshed;
